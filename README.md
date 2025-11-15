@@ -1,6 +1,20 @@
-# DeployClientFrontend
+# Deploy Client Frontend
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.10.
+
+## Stack
+
+- Tailwind
+- DaisyUI
+- Prettier (formatter)
+- Eslint (code rules)
+- Transloco (i18n)
+
+## Formatter and code rules
+
+You can find formatter config in the '.prettierrc.json' file. Use format on save in your IDE settings if you want to.
+
+You can find eslint for code rules in the 'eslint.config.js' file.
 
 ## Development server
 
@@ -11,20 +25,6 @@ ng serve
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
 
 ## Building
 
@@ -53,7 +53,3 @@ ng e2e
 ```
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

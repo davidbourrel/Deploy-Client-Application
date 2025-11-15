@@ -2,3 +2,15 @@
 @plugin "daisyui" {
   themes: light --default, dark --prefersdark;
 }
+
+@layer utilities {
+  .bg-app-gradient {
+    background: #e8e8e8;
+    background: linear-gradient(
+      31deg,
+      rgba(232, 232, 232, 1) 0%,
+      rgba(93, 87, 199, 1) 78%,
+      rgba(93, 87, 199, 1) 100%
+    );
+  }
+}

@@ -1,7 +1,9 @@
-<div class="h-svh flex flex-col flex-2 p-2">
+<div class="h-svh flex flex-col items-center justify-center flex-2 p-2 bg-app-gradient relative">
   <app-header />
 
   <main>
-    <router-outlet />
+    <app-deployment-wizard>
+      <router-outlet />
+    </app-deployment-wizard>
   </main>
 </div>
