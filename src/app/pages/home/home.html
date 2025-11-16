@@ -1,9 +1,35 @@
-<div class="card-body">
-  <h1 class="card-title text-primary">Xlarge Card</h1>
-  <p>
-    A card component has a figure, a body part, and inside body there are title and actions parts
-  </p>
-  <div class="justify-end card-actions">
-    <button class="btn btn-primary" type="button">Buy Now</button>
-  </div>
-</div>
+<app-layout *transloco="let t">
+  <section class="flex flex-col gap-6">
+    <app-headings color="primary" label="{{ t('home.mainTitle') }}" />
+
+    <p class="text-primary font-bold text-center">
+      {{ t('home.setupChoices') }}
+    </p>
+
+    <div class="flex flex-col gap-8 md:flex-row">
+      <a [routerLink]="goToDeployClientPage()">
+        <div
+          class="card w-60 bg-base-200 card-l shadow border border-base-300 transition-colors hover:border-primary"
+        >
+          <div class="card-body items-center justify-center">
+            <mat-icon class="text-primary! scale-125">rocket_launch</mat-icon>
+            <span class="text-center font-bold">{{ t('home.deployNewClient.title') }}</span>
+            <span class="text-center">{{ t('home.deployNewClient.description') }}</span>
+          </div>
+        </div>
+      </a>
+
+      <a [routerLink]="goToGenerateTokenPage()">
+        <div
+          class="card w-60 bg-base-200 card-l shadow border border-base-300 transition-colors hover:border-primary"
+        >
+          <div class="card-body items-center justify-center">
+            <mat-icon class="text-primary! scale-125">filter_vintage</mat-icon>
+            <span class="text-center font-bold">{{ t('home.generateNewToken.title') }}</span>
+            <span class="text-center">{{ t('home.generateNewToken.description') }}</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+</app-layout>

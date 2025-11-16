@@ -1,1 +1,15 @@
-{}
+{
+  "shared": {},
+  "home": {
+    "mainTitle": "Gestion client MAIA",
+    "setupChoices": "Que souhaitez-vous faire ?",
+    "deployNewClient": {
+      "title": "Déployer un nouveau client",
+      "description": "Créer et configurer un nouvel espace client MAIA"
+    },
+    "generateNewToken": {
+      "title": "Regénérer un nouveau token",
+      "description": "Regénérer le token d'accès pour un client existant"
+    }
+  }
+}

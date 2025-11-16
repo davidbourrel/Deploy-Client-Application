@@ -1,0 +1,32 @@
+@switch (level()) {
+  @case ('h1') {
+    <h1 [class]="classes()">
+      {{ label() }}
+    </h1>
+  }
+  @case ('h2') {
+    <h2 [class]="classes()">
+      {{ label() }}
+    </h2>
+  }
+  @case ('h3') {
+    <h3 [class]="classes()">
+      {{ label() }}
+    </h3>
+  }
+  @case ('h4') {
+    <h4 [class]="classes()">
+      {{ label() }}
+    </h4>
+  }
+  @case ('h5') {
+    <h5 [class]="classes()">
+      {{ label() }}
+    </h5>
+  }
+  @case ('h6') {
+    <h6 [class]="classes()">
+      {{ label() }}
+    </h6>
+  }
+}
