@@ -1,18 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DeployClient } from './deploy-client';
+import { DeploymentSteps } from './deployment-steps';
 
-describe('DeployClient', () => {
-  let component: DeployClient;
-  let fixture: ComponentFixture<DeployClient>;
+describe('DeploymentSteps', () => {
+  let component: DeploymentSteps;
+  let fixture: ComponentFixture<DeploymentSteps>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DeployClient]
-    })
-    .compileComponents();
+      imports: [DeploymentSteps],
+    }).compileComponents();
 
-    fixture = TestBed.createComponent(DeployClient);
+    fixture = TestBed.createComponent(DeploymentSteps);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

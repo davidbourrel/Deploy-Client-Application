@@ -1,20 +1,20 @@
 <app-layout *transloco="let t">
   <section class="flex flex-col gap-6">
-    <app-headings color="primary" label="{{ t('home.mainTitle') }}" />
+    <app-headings color="primary" label="{{ t('setupChoice.title') }}" />
 
     <p class="text-primary font-bold text-center">
-      {{ t('home.setupChoices') }}
+      {{ t('setupChoice.description') }}
     </p>
 
     <div class="flex flex-col gap-8 md:flex-row">
-      <a [routerLink]="goToDeployClientPage()">
+      <a [routerLink]="goToClientDeploymentPage()">
         <div
           class="card w-60 bg-base-200 card-l shadow border border-base-300 transition-colors hover:border-primary"
         >
           <div class="card-body items-center justify-center">
             <mat-icon class="text-primary! scale-125">rocket_launch</mat-icon>
-            <span class="text-center font-bold">{{ t('home.deployNewClient.title') }}</span>
-            <span class="text-center">{{ t('home.deployNewClient.description') }}</span>
+            <span class="text-center font-bold">{{ t('setupChoice.deployNewClient.title') }}</span>
+            <span class="text-center">{{ t('setupChoice.deployNewClient.description') }}</span>
           </div>
         </div>
       </a>
@@ -25,8 +25,8 @@
         >
           <div class="card-body items-center justify-center">
             <mat-icon class="text-primary! scale-125">filter_vintage</mat-icon>
-            <span class="text-center font-bold">{{ t('home.generateNewToken.title') }}</span>
-            <span class="text-center">{{ t('home.generateNewToken.description') }}</span>
+            <span class="text-center font-bold">{{ t('setupChoice.generateNewToken.title') }}</span>
+            <span class="text-center">{{ t('setupChoice.generateNewToken.description') }}</span>
           </div>
         </div>
       </a>

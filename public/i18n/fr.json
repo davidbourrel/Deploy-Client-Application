@@ -1,8 +1,8 @@
 {
   "shared": {},
-  "home": {
-    "mainTitle": "Gestion client MAIA",
-    "setupChoices": "Que souhaitez-vous faire ?",
+  "setupChoice": {
+    "title": "Gestion client MAIA",
+    "description": "Que souhaitez-vous faire ?",
     "deployNewClient": {
       "title": "Déployer un nouveau client",
       "description": "Créer et configurer un nouvel espace client MAIA"
@@ -10,6 +10,17 @@
     "generateNewToken": {
       "title": "Regénérer un nouveau token",
       "description": "Regénérer le token d'accès pour un client existant"
+    }
+  },
+  "clientDeployment": {
+    "title": "Déploiement client",
+    "workspaceAccountsCreationStep": {
+      "tab": "Étape 1",
+      "title": "Étape 1 : Création des comptes sur le workspace MAIA"
+    },
+    "googleApiTokensCreationStep": {
+      "tab": "Étape 2",
+      "title": "Étape 2 : Création des tokens d'API Google"
     }
   }
 }

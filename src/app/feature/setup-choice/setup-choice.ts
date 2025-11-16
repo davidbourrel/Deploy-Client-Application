@@ -1,19 +1,19 @@
 import { Component } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
 import { TranslocoModule } from '@jsverse/transloco';
 import { APP_ROUTES } from '../../app.routes';
 import { Headings } from '../../shared/components/headings/headings';
 import { Layout } from '../../shared/components/layout/layout';
-import { MatIconModule } from '@angular/material/icon';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-setup-choice',
   imports: [TranslocoModule, Layout, RouterModule, Headings, MatIconModule],
-  templateUrl: './home.html',
+  templateUrl: './setup-choice.html',
 })
-export class Home {
-  protected readonly goToDeployClientPage = () => {
-    return ['/', APP_ROUTES.deployClient.path];
+export class SetupChoice {
+  protected readonly goToClientDeploymentPage = () => {
+    return ['/', APP_ROUTES.clientDeployment.path];
   };
 
   protected readonly goToGenerateTokenPage = () => {

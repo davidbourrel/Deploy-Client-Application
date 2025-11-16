@@ -1,0 +1,29 @@
+<section *transloco="let t" class="flex flex-col gap-4">
+  <app-headings color="primary" label="{{ t('clientDeployment.title') }}" />
+
+  <div class="tabs tabs-lift">
+    <input
+      aria-label="{{ t('clientDeployment.workspaceAccountsCreationStep.tab') }}"
+      checked="checked"
+      class="tab"
+      name="my_tabs_3"
+      type="radio"
+    />
+    <div class="tab-content bg-base-100 border-base-300 p-6">
+      <app-workspace-accounts-creation-step />
+    </div>
+
+    <input
+      aria-label="{{ t('clientDeployment.googleApiTokensCreationStep.tab') }}"
+      class="tab"
+      name="my_tabs_3"
+      type="radio"
+    />
+    <div class="tab-content bg-base-100 border-base-300 p-6">
+      <app-google-api-tokens-creation-step />
+    </div>
+
+    <input aria-label="Tab 3" class="tab" name="my_tabs_3" type="radio" />
+    <div class="tab-content bg-base-100 border-base-300 p-6">Tab content 3</div>
+  </div>
+</section>

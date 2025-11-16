@@ -8,7 +8,7 @@ import { APP_ROUTES } from '../../../app.routes';
   templateUrl: './header.html',
 })
 export class Header {
-  protected readonly goToHomePage = () => {
-    return ['/', APP_ROUTES.home.path];
+  protected readonly goToSetupChoicePage = () => {
+    return ['/', APP_ROUTES.setupChoice.path];
   };
 }
