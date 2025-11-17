@@ -19,6 +19,7 @@ export class Headings {
   readonly color = input<HeadingColor>('base-content');
   readonly weight = input<HeadingWeight>('bold');
   readonly align = input<HeadingAlign>('left');
+  readonly class = input<string>('');
 
   protected readonly classes = computed(() => {
     const sizeMap: Record<HeadingSize, string> = {
@@ -54,6 +55,11 @@ export class Headings {
       right: 'text-right',
     };
 
-    return `${sizeMap[this.size()]} ${colorMap[this.color()]} ${weightMap[this.weight()]} ${alignMap[this.align()]}`;
+    const size = sizeMap[this.size()];
+    const color = colorMap[this.color()];
+    const weight = weightMap[this.weight()];
+    const align = alignMap[this.align()];
+
+    return `${size} ${color} ${weight} ${align} ${this.class()}`;
   });
 }

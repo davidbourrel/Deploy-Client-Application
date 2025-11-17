@@ -8,8 +8,8 @@
       "description": "Créer et configurer un nouvel espace client MAIA"
     },
     "generateNewToken": {
-      "title": "Regénérer un nouveau token",
-      "description": "Regénérer le token d'accès pour un client existant"
+      "title": "Regénérer un token client",
+      "description": "Regénérer le token d'accès d'un client existant"
     }
   },
   "clientDeployment": {
