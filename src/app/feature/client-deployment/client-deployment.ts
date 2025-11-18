@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { Layout } from '../../shared/components/layout/layout';
+import { TranslocoModule } from '@jsverse/transloco';
 import { DeploymentSteps } from './deployment-steps/deployment-steps';
+import { Headings } from "../../shared/components/headings/headings";
 
 @Component({
   selector: 'app-client-deployment',
-  imports: [Layout, DeploymentSteps],
+  imports: [DeploymentSteps, TranslocoModule, Headings],
   templateUrl: './client-deployment.html',
 })
 export class ClientDeployment {}

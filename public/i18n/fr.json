@@ -16,7 +16,31 @@
     "title": "Déploiement client",
     "workspaceAccountsCreationStep": {
       "tab": "Étape 1",
-      "title": "Étape 1 : Création des comptes sur le workspace MAIA"
+      "title": "Étape 1 : Création des comptes sur le workspace MAIA",
+      "stepList": {
+        "1": "Se connecter sur le compte :",
+        "2": "Aller sur :",
+        "3": "Utilisateur/Ajouter un utilisateur",
+        "4": "Remplir les champs selon le modèle ci-dessous :",
+        "4subList": {
+          "firstName": "Prénom",
+          "firstNameComplement": "scinder le nom du client et utiliser la 1ère partie du nom du client",
+          "lastName": "Nom du client",
+          "lastNameComplement": "utiliser la 2ème partie du nom du client",
+          "url": "url",
+          "urlComplement": "nom du client",
+          "organizationalUnit": "unité organisationnelle : standard",
+          "passwordCheck": "check créer un mot de passe",
+          "passwordCheckFormat": "créer un mot de passe avec le nom du client et avec:",
+          "passwordCheckFormatSubList": {
+            "withUppercase": "une majuscule",
+            "withNumber": "un numéro (date du jour)",
+            "withSpecialCharacter": "$"
+          },
+          "uncheckChangePasswordInvitation": "décocher « inviter l'utilisateur à modifier son mot de passe »"
+        },
+        "5": "Récupérer les credentials de connexion et les mettre dans Psono en créant un répertoire avec son numéro et son nom dans ancien keepass/maia/google"
+      }
     },
     "googleApiTokensCreationStep": {
       "tab": "Étape 2",

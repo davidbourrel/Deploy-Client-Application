@@ -4,11 +4,10 @@ import { RouterModule } from '@angular/router';
 import { TranslocoModule } from '@jsverse/transloco';
 import { APP_ROUTES } from '../../app.routes';
 import { Headings } from '../../shared/components/headings/headings';
-import { Layout } from '../../shared/components/layout/layout';
 
 @Component({
   selector: 'app-setup-choice',
-  imports: [TranslocoModule, Layout, RouterModule, Headings, MatIconModule],
+  imports: [TranslocoModule, RouterModule, Headings, MatIconModule],
   templateUrl: './setup-choice.html',
 })
 export class SetupChoice {

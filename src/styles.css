@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import 'tailwindcss';
 @plugin "daisyui" {
@@ -7,7 +7,7 @@
     dark --prefersdark;
 }
 @theme {
-  --font-app: 'Lato', sans-serif;
+  --font-app: 'Comfortaa', sans-serif;
 }
 
 @layer utilities {
