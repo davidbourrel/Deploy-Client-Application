@@ -1,7 +1,20 @@
 <div class="h-full flex flex-col items-center">
   <div class="bg-base-100 shadow-sm rounded-lg max-w-7xl w-full p-8">
-    <section *transloco="let t" class="flex flex-col gap-4">
-      <app-headings color="primary" label="{{ t('clientDeployment.title') }}" />
+    <section *transloco="let t" class="flex flex-col gap-12">
+      <div class="flex flex-col gap-2">
+        <app-headings color="primary" label="{{ t('clientDeployment.title') }}" />
+
+        <div class="form-control w-full">
+          <label for="clientName"> {{ t('clientDeployment.clientNameLabel') }} :</label>
+          <input
+            class="input input-bordered w-full"
+            id="clientName"
+            type="text"
+            [value]="clientName()"
+            (input)="onClientNameChange($event)"
+          />
+        </div>
+      </div>
 
       <app-deployment-steps />
     </section>

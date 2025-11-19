@@ -1,99 +1,78 @@
 <div *transloco="let t; prefix: 'clientDeployment.workspaceAccountsCreationStep'">
   <app-headings color="primary" level="h2" size="xl" [label]="t('title')" />
 
-  <ol class="list-decimal list-inside space-y-6 mt-6">
-    <!-- Étape 1 -->
-    <li class="font-medium">
+  <ol class="list-decimal list-inside flex flex-col gap-6 mt-6">
+    <li>
       <span>{{ t('stepList.1') }}</span>
-      <div class="ml-6 mt-2">
-        <div class="alert alert-info">
-          <span>admin&#64;maiakeo.com</span>
-        </div>
+      <div class="alert ml-6 mt-2">
+        <span>support&#64;maia-logiciels.fr</span>
       </div>
     </li>
 
-    <!-- Étape 2 -->
-    <li class="font-medium">
+    <li>
       <span>{{ t('stepList.2') }}</span>
-      <div class="ml-6 mt-2">
-        <div class="alert alert-info">
-          <span>https://admin.google.com</span>
-        </div>
+      <div class="alert ml-6 mt-2">
+        <span>https://admin.google.com</span>
       </div>
     </li>
 
-    <!-- Étape 3 -->
-    <li class="font-medium">
+    <li>
       <span>{{ t('stepList.3') }}</span>
     </li>
 
-    <!-- Étape 4 -->
-    <li class="font-medium">
+    <li>
       <span>{{ t('stepList.4') }}</span>
       <div class="ml-6 mt-2 space-y-3">
         <ul class="list-disc list-inside space-y-2 text-base-content/70">
           <li>
             <div class="inline-flex items-baseline gap-2">
-              <strong>{{ t('stepList.4subList.firstName') }}</strong>
-              <p class="text-sm">({{ t('stepList.4subList.firstNameComplement') }})</p>
+              <span>{{ t('stepList.4subList.firstName') }} :</span>
+              <p class="text-sm text-primary italic">
+                ({{ t('stepList.4subList.firstNameComplement') }})
+              </p>
             </div>
           </li>
           <li>
             <div class="inline-flex items-baseline gap-2">
-              <strong>{{ t('stepList.4subList.lastName') }}</strong>
-              <p class="text-sm">({{ t('stepList.4subList.lastNameComplement') }})</p>
+              <span>{{ t('stepList.4subList.lastName') }} :</span>
+              <p class="text-sm text-primary italic">
+                ({{ t('stepList.4subList.lastNameComplement') }})
+              </p>
             </div>
           </li>
           <li>
             <div class="inline-flex items-baseline gap-2">
-              <strong>{{ t('stepList.4subList.url') }}</strong>
-              <p class="text-sm">({{ t('stepList.4subList.urlComplement') }})</p>
+              <span>{{ t('stepList.4subList.url') }} :</span>
+              <p class="text-sm text-primary italic">
+                ({{ t('stepList.4subList.urlComplement') }})
+              </p>
             </div>
           </li>
           <li>
-            <strong>{{ t('stepList.4subList.organizationalUnit') }}</strong>
+            {{ t('stepList.4subList.organizationalUnit') }}
           </li>
           <li>
-            <div class="inline-flex items-baseline gap-2">
-              <strong>{{ t('stepList.4subList.passwordCheck') }}</strong>
-              <p class="text-sm">({{ t('stepList.4subList.passwordCheckFormat') }})</p>
-            </div>
-            <ul class="ml-8 mt-1 space-y-1 text-sm list-disc">
-              <li>{{ t('stepList.4subList.passwordCheckFormatSubList.withUppercase') }}</li>
-              <li>{{ t('stepList.4subList.passwordCheckFormatSubList.withNumber') }}</li>
+            {{ t('stepList.4subList.passwordCheck') }}
+          </li>
+          <li>
+            <span>{{ t('stepList.4subList.passwordCheckFormat') }}</span>
+            <ul class="ml-8 mt-1 space-y-1 text-sm">
+              <li>- {{ t('stepList.4subList.passwordCheckFormatSubList.withUppercase') }}</li>
+              <li>- {{ t('stepList.4subList.passwordCheckFormatSubList.withNumber') }}</li>
               <li>
-                {{ t('stepList.4subList.passwordCheckFormatSubList.withSpecialCharacter') }}
+                - {{ t('stepList.4subList.passwordCheckFormatSubList.withSpecialCharacter') }}
               </li>
             </ul>
           </li>
           <li>
-            <strong>{{ t('stepList.4subList.uncheckChangePasswordInvitation') }}</strong>
+            {{ t('stepList.4subList.uncheckChangePasswordInvitation') }}
           </li>
         </ul>
       </div>
     </li>
 
-    <!-- Étape 5 -->
-    <li class="font-medium">
+    <li>
       <span>{{ t('stepList.5') }}</span>
-      <div class="ml-6 mt-2">
-        <div class="alert alert-warning">
-          <svg
-            class="stroke-current shrink-0 h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-            />
-          </svg>
-          <span>Important : Stocker les identifiants de manière sécurisée</span>
-        </div>
-      </div>
     </li>
   </ol>
 </div>
