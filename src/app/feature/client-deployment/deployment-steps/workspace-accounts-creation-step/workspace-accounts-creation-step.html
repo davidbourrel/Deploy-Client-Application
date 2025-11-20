@@ -1,24 +1,18 @@
 <div *transloco="let t; prefix: 'clientDeployment.workspaceAccountsCreationStep'">
-  <app-headings color="primary" level="h2" size="xl" [label]="t('title')" />
+  <app-headings color="secondary" level="h2" size="xl" [label]="t('title')" />
 
   <ol class="list-decimal list-inside flex flex-col gap-6 mt-6">
     <li>
       <span>{{ t('stepList.1') }}</span>
-      <div class="alert ml-6 mt-2">
-        <span>support&#64;maia-logiciels.fr</span>
-      </div>
+      <div class="alert ml-6 mt-2">{{ `support@maia-logiciels.fr` }}</div>
     </li>
 
     <li>
       <span>{{ t('stepList.2') }}</span>
-      <div class="alert ml-6 mt-2">
-        <span>https://admin.google.com</span>
-      </div>
+      <div class="alert ml-6 mt-2">https://admin.google.com</div>
     </li>
 
-    <li>
-      <span>{{ t('stepList.3') }}</span>
-    </li>
+    <li>{{ t('stepList.3') }}</li>
 
     <li>
       <span>{{ t('stepList.4') }}</span>
@@ -26,7 +20,7 @@
         <ul class="list-disc list-inside space-y-2 text-base-content/70">
           <li>
             <div class="inline-flex items-baseline gap-2">
-              <span>{{ t('stepList.4subList.firstName') }} :</span>
+              <span>{{ t('stepList.4subList.firstName') }}</span>
               <p class="text-sm text-primary italic">
                 ({{ t('stepList.4subList.firstNameComplement') }})
               </p>
@@ -34,7 +28,7 @@
           </li>
           <li>
             <div class="inline-flex items-baseline gap-2">
-              <span>{{ t('stepList.4subList.lastName') }} :</span>
+              <span>{{ t('stepList.4subList.lastName') }}</span>
               <p class="text-sm text-primary italic">
                 ({{ t('stepList.4subList.lastNameComplement') }})
               </p>
@@ -42,7 +36,7 @@
           </li>
           <li>
             <div class="inline-flex items-baseline gap-2">
-              <span>{{ t('stepList.4subList.url') }} :</span>
+              <span>{{ t('stepList.4subList.url') }}</span>
               <p class="text-sm text-primary italic">
                 ({{ t('stepList.4subList.urlComplement') }})
               </p>
@@ -71,8 +65,6 @@
       </div>
     </li>
 
-    <li>
-      <span>{{ t('stepList.5') }}</span>
-    </li>
+    <li>{{ t('stepList.5') }}</li>
   </ol>
 </div>

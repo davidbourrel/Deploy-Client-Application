@@ -1,4 +1,8 @@
-<div class="h-svh flex flex-col gap-2 p-2 bg-app-gradient font-app">
+<div
+  class="h-svh flex flex-col gap-2 p-2 font-app"
+  [class.bg-app-gradient]="!themeService.isDarkMode()"
+  [class.bg-app-gradient-dark]="themeService.isDarkMode()"
+>
   <app-header />
 
   <main class="flex-1 overflow-y-auto">

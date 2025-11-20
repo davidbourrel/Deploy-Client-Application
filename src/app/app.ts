@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ThemeService } from './feature/theme/theme.service';
 import { Header } from './shared/components/header/header';
 
 @Component({
@@ -7,4 +8,6 @@ import { Header } from './shared/components/header/header';
   imports: [RouterOutlet, Header],
   templateUrl: './app.html',
 })
-export class App {}
+export class App {
+  themeService = inject(ThemeService);
+}

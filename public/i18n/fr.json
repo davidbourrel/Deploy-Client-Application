@@ -24,11 +24,11 @@
         "3": "Utilisateur/Ajouter un utilisateur",
         "4": "Remplir les champs selon le modèle ci-dessous :",
         "4subList": {
-          "firstName": "prénom",
+          "firstName": "prénom :",
           "firstNameComplement": "scinder le nom du client et utiliser la 1ère partie du nom du client",
-          "lastName": "nom du client",
+          "lastName": "nom du client :",
           "lastNameComplement": "utiliser la 2ème partie du nom du client",
-          "url": "url",
+          "url": "url :",
           "urlComplement": "nom du client",
           "organizationalUnit": "unité organisationnelle : standard",
           "passwordCheck": "check créer un mot de passe",
@@ -45,7 +45,29 @@
     },
     "googleApiTokensCreationStep": {
       "tab": "Étape 2",
-      "title": "Étape 2 : Création des tokens d'API Google"
+      "title": "Étape 2 : Création des tokens d'API Google",
+      "stepList": {
+        "1": "Se connecter sur le compte google du client et aller sur :",
+        "2": "Sur le menu du haut 'Sélectionnez un projet' et créer un nouveau projet :",
+        "3": "Dans la barre de recherche drive api et gmail api et les activer",
+        "4": "Dans le menu latéral API et service et écran de consentement :",
+        "4subList": {
+          "appType": "type : interne",
+          "appName": "nom de l'application :",
+          "supportEmail": "coordonnées du développeur :",
+          "addApplicationField": "ajouter des champs d'applications :",
+          "addApplicationFieldSubLit": {
+            "gmailField": "Pour Gmail :",
+            "driveField": "Pour Drive :"
+          }
+        },
+        "5": "Dans le menu identifiants de API et service, créer un 'ID Client OAuth' :",
+        "5subList": {
+          "appType": "type : application web",
+          "name": "nom :",
+          "authorizedRedirectUris": "URI de redirection :"
+        }
+      }
     }
   }
 }

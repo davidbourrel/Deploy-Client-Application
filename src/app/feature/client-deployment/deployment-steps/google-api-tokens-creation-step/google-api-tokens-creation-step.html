@@ -1,8 +1,64 @@
-<div *transloco="let t">
-  <app-headings
-    color="primary"
-    label="{{ t('clientDeployment.googleApiTokensCreationStep.title') }}"
-    level="h2"
-    size="xl"
-  />
+<div *transloco="let t; prefix: 'clientDeployment.googleApiTokensCreationStep'">
+  <app-headings color="secondary" level="h2" size="xl" [label]="t('title')" />
+
+  <ol class="list-decimal list-inside flex flex-col gap-6 mt-6">
+    <li>
+      <span>{{ t('stepList.1') }}</span>
+      <div class="alert ml-6 mt-2">https://console.cloud.google.com</div>
+    </li>
+
+    <li>
+      <span>{{ t('stepList.2') }}</span>
+      <div class="alert ml-6 mt-2">{{ `maia-${clientName()}-app` }}</div>
+    </li>
+
+    <li>{{ t('stepList.3') }}</li>
+
+    <li>
+      <span>{{ t('stepList.4') }}</span>
+      <div class="ml-6 mt-2 space-y-3">
+        <ul class="list-disc list-inside space-y-2 text-base-content/70">
+          <li>{{ t('stepList.4subList.appType') }}</li>
+          <li>
+            <span>{{ t('stepList.4subList.appName') }}</span>
+            <div class="alert ml-6 mt-2">{{ `maia-${clientName()}-app` }}</div>
+          </li>
+          <li>
+            <span>{{ t('stepList.4subList.supportEmail') }}</span>
+            <div class="alert ml-6 mt-2">{{ `support@maia-logiciels.fr` }}</div>
+          </li>
+          <li>
+            <span>{{ t('stepList.4subList.addApplicationField') }}</span>
+            <ul class="ml-8 mt-1 space-y-1 text-sm">
+              <li>
+                <span>- {{ t('stepList.4subList.addApplicationFieldSubLit.gmailField') }}</span>
+                <div class="alert ml-6 mt-2">https://mail.google.com/</div>
+              </li>
+              <li>
+                <span>- {{ t('stepList.4subList.addApplicationFieldSubLit.driveField') }}</span>
+                <div class="alert ml-6 mt-2">/auth/drive</div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </li>
+
+    <li>
+      <span>{{ t('stepList.5') }}</span>
+      <div class="ml-6 mt-2 space-y-3">
+        <ul class="list-disc list-inside space-y-2 text-base-content/70">
+          <li>{{ t('stepList.5subList.appType') }}</li>
+          <li>
+            <span>{{ t('stepList.5subList.name') }}</span>
+            <div class="alert ml-6 mt-2">{{ `maia-${clientName()}-app` }}</div>
+          </li>
+          <li>
+            <span>{{ t('stepList.5subList.authorizedRedirectUris') }}</span>
+            <div class="alert ml-6 mt-2">http://localhost:3000</div>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ol>
 </div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { TranslocoModule } from '@jsverse/transloco';
 import { Headings } from '../../../../shared/components/headings/headings';
 
@@ -7,4 +7,6 @@ import { Headings } from '../../../../shared/components/headings/headings';
   imports: [Headings, TranslocoModule],
   templateUrl: './google-api-tokens-creation-step.html',
 })
-export class GoogleApiTokensCreationStep {}
+export class GoogleApiTokensCreationStep {
+  readonly clientName = input<string>('');
+}

@@ -17,7 +17,7 @@
     type="radio"
   />
   <div class="tab-content bg-base-100 border-base-300 p-6">
-    <app-google-api-tokens-creation-step />
+    <app-google-api-tokens-creation-step [clientName]="clientName()" />
   </div>
 
   <input aria-label="Tab 3" class="tab" name="my_tabs_3" type="radio" />

@@ -1,23 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import 'tailwindcss';
-@plugin "daisyui" {
-  themes:
-    light --default,
-    dark --prefersdark;
+
+@plugin "daisyui";
+
+/* Thème Light */
+@plugin "daisyui/theme" {
+  name: 'maiaTheme';
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+
+  --color-primary: #1a1760;
+  --color-primary-content: #ffffff;
+  --color-secondary: #886afe;
+  --color-secondary-content: #ffffff;
+  --color-accent: #eb2e77;
+  --color-accent-content: #ffffff;
+  --color-neutral: #1a1760;
+  --color-neutral-content: #ffffff;
+  --color-base-100: #ffffff;
+  --color-base-200: #f6f3f3;
+  --color-base-300: #c0e0f7;
+  --color-base-content: #1a1760;
+  --color-info: #886afe;
+  --color-info-content: #ffffff;
+  --color-success: #6daf00;
+  --color-success-content: #ffffff;
+  --color-warning: #ff7b17;
+  --color-warning-content: #ffffff;
+  --color-error: #db0000;
+  --color-error-content: #ffffff;
 }
+
+/* Thème Dark */
+@plugin "daisyui/theme" {
+  name: 'maiaTheme-dark';
+  prefersdark: true;
+  color-scheme: dark;
+
+  --color-primary: #886afe;
+  --color-primary-content: #ffffff;
+  --color-secondary: #c0e0f7;
+  --color-secondary-content: #1a1760;
+  --color-accent: #eb2e77;
+  --color-accent-content: #ffffff;
+  --color-neutral: #2a2a4a;
+  --color-neutral-content: #ffffff;
+  --color-base-100: #1a1a2e;
+  --color-base-200: #16213e;
+  --color-base-300: #0f3460;
+  --color-base-content: #e8e8e8;
+  --color-info: #886afe;
+  --color-info-content: #ffffff;
+  --color-success: #6daf00;
+  --color-success-content: #ffffff;
+  --color-warning: #ff7b17;
+  --color-warning-content: #000000;
+  --color-error: #ff4757;
+  --color-error-content: #ffffff;
+}
+
 @theme {
   --font-app: 'Comfortaa', sans-serif;
 }
 
 @layer utilities {
   .bg-app-gradient {
-    background: #e8e8e8;
     background: linear-gradient(
-      31deg,
-      rgba(232, 232, 232, 1) 0%,
-      rgba(93, 87, 199, 1) 78%,
-      rgba(93, 87, 199, 1) 100%
+      52deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(192, 224, 247, 1) 25%,
+      rgba(192, 224, 247, 1) 59%,
+      rgba(136, 106, 254, 1) 100%
+    );
+  }
+
+  .bg-app-gradient-dark {
+    background: linear-gradient(
+      52deg,
+      rgba(26, 26, 46, 1) 0%,
+      rgba(15, 52, 96, 1) 25%,
+      rgba(22, 33, 62, 1) 59%,
+      rgba(42, 42, 74, 1) 100%
     );
   }
 }
