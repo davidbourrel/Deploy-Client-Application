@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
 import { TranslocoModule } from '@jsverse/transloco';
 import { APP_ROUTES } from '../../app.routes';
@@ -7,7 +6,7 @@ import { Headings } from '../../shared/components/headings/headings';
 
 @Component({
   selector: 'app-setup-choice',
-  imports: [TranslocoModule, RouterModule, Headings, MatIconModule],
+  imports: [TranslocoModule, RouterModule, Headings],
   templateUrl: './setup-choice.html',
 })
 export class SetupChoice {

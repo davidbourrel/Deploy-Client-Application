@@ -2,7 +2,7 @@ import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { APP_ROUTES } from '../../../app.routes';
-import { ThemeToggle } from '../../../feature/theme/theme-toggle';
+import { ThemeToggle } from '../theme-toggle/theme-toggle';
 
 @Component({
   selector: 'app-header',

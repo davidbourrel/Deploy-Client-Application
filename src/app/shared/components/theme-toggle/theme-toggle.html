@@ -1,0 +1,12 @@
+<button
+  class="btn btn-circle btn-ghost"
+  type="button"
+  [attr.aria-label]="themeService.isDarkMode() ? 'Activer le mode clair' : 'Activer le mode sombre'"
+  (click)="themeService.toggleTheme()"
+>
+  @if (themeService.isDarkMode()) {
+    <span class="material-symbols-outlined"> dark_mode </span>
+  } @else {
+    <span class="material-symbols-outlined"> light_mode </span>
+  }
+</button>

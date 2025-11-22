@@ -1,6 +1,6 @@
 import { isPlatformBrowser } from '@angular/common';
 import { effect, inject, Injectable, PLATFORM_ID, signal } from '@angular/core';
-import { Theme } from './theme.model';
+import { Theme } from '../../core/models/theme.model';
 
 @Injectable({ providedIn: 'root' })
 export class ThemeService {
